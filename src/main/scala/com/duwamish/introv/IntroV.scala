@@ -12,8 +12,11 @@ object IntroV {
 
   def main(args: Array[String]): Unit = {
 
-    g.console.log("welcome to IntroV")
+    $(() => {
+      g.console.log("welcome to IntroV v1")
 
+      $("#headerText").text("welcome all the introvs")
+    })
   }
 
 }
