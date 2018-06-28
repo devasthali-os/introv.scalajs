@@ -1,0 +1,20 @@
+{
+  "name": "introv",
+  "version": "1.0.0",
+  "description": "introv",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "https://code.duwamish.com/artifactory/libs-release-local"
+  },
+  "author": "prayagupd",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.16.1",
+    "formidable": "^1.0.17",
+    "immutable": "^3.8.2"
+  }
+}

@@ -19,3 +19,10 @@ welcome to IntroV
 $ node target/scala-2.12/scalajs-on-nodejs-fastopt.js
 welcome to IntroV
 ```
+
+run on nodejs
+-------------
+
+```
+npm start
+```
