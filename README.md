@@ -3,6 +3,7 @@ scalajs on nodejs
 
 ```
 ## install sjs
+npm install
 node node_modules/sjs-nodejs/index.js
 ```
 
@@ -31,3 +32,5 @@ run on nodejs
 ```
 npm start
 ```
+
+go to http://localhost:8080/
