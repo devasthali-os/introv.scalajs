@@ -2,7 +2,12 @@ scalajs on nodejs
 -----------------
 
 ```
-$ sbt run
+## install sjs
+node node_modules/sjs-nodejs/index.js
+```
+
+```
+$ node_modules/sbt/bin/sbt run
 [info] Loading settings from idea.sbt ...
 [info] Loading global plugins from /Users/prayagupd/.sbt/1.0/plugins
 [info] Loading settings from plugins.sbt ...
