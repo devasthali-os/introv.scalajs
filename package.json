@@ -17,6 +17,7 @@
     "formidable": "^1.0.17",
     "immutable": "^3.8.2",
     "request": "^2.88.0",
+    "sjs-nodejs": "^1.0.0",
     "yauzl": "^2.10.0"
   }
 }
