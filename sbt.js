@@ -16,7 +16,7 @@ var request = http.get("https://piccolo.link/sbt-1.2.7.zip", function(response) 
 });
 */
 
-
+/*
 http.get("https://piccolo.link/sbt-1.2.7.zip", (response) => {
   var buffer = ''
   response.on('data', (c) => {
@@ -27,19 +27,19 @@ http.get("https://piccolo.link/sbt-1.2.7.zip", (response) => {
     console.log("done")
   });
 });
-
+*/
 
 var fileUrl = "https://piccolo.link/sbt-1.2.7.zip";
 var output = "sbt.zip";
-/*
+
 http_client({url: fileUrl, encoding: null}, function(err, resp, body) {
   if(err) throw err;
   fs.writeFile(output, body, function(err) {
     console.log("sbt downloaded");
-    setup_sbt()
+    setup_sbt(() => chmod_sbt());
   });
 });
-*/
+
 
 function mkdirp(dir, cb) {
   if (dir === ".") return cb();
@@ -54,9 +54,10 @@ function mkdirp(dir, cb) {
   });
 }
 
-setup_sbt();
+//setup_sbt();
+//chmod_sbt();
 
-function setup_sbt() {
+function setup_sbt(fn) {
 
 console.log("setting up sbt")
 yauzl.open("sbt.zip", {lazyEntries: true}, function(err, zipfile) {
@@ -82,9 +83,16 @@ yauzl.open("sbt.zip", {lazyEntries: true}, function(err, zipfile) {
         });
         var writeStream = fs.createWriteStream(entry.fileName);
 	readStream.pipe(writeStream);
+//        fn();
       });
     });
    }
   });
 });
 }
+
+// chmod -R 777 sbt
+function chmod_sbt() {
+  fs.chmod('sbt', 777)
+}
+
