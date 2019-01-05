@@ -6,6 +6,7 @@
   "scripts": {
     "sbtInit": "node node_modules/sjs-nodejs/index.js",
     "sbtBuild": "npm run sbtInit; node_modules/sbt/bin/sbt fastOptJS",
+    "sjs": "node_modules/sbt/bin/sbt run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "publishConfig": {

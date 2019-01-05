@@ -4,11 +4,13 @@ scalajs on nodejs
 ```
 ## install sjs
 npm install
-node node_modules/sjs-nodejs/index.js
+
+## transpile scalajs to js, using a task defined in package.js
+npm run sbtBuild
 ```
 
 ```
-$ node_modules/sbt/bin/sbt run
+$ npm run sjs
 [info] Loading settings from idea.sbt ...
 [info] Loading global plugins from /Users/prayagupd/.sbt/1.0/plugins
 [info] Loading settings from plugins.sbt ...
