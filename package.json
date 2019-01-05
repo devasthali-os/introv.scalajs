@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "sbtInit": "node node_modules/sjs-nodejs/index.js",
+    "sbtBuild": "npm run sbtInit; node_modules/sbt/bin/sbt fastOptJS",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "publishConfig": {
