@@ -6,7 +6,8 @@ scalajs on nodejs
 npm install
 
 ## transpile scalajs to js, using a task defined in package.js
-npm run sbtBuild
+npm run sbtInit ## it sets up sbt in node_modules/sbt 
+npm run sbtBuild ## NOTE: needs JRE installed
 ```
 
 ```

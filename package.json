@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "sbtInit": "node node_modules/sjs-nodejs/index.js",
-    "sbtBuild": "npm run sbtInit; node_modules/sbt/bin/sbt fastOptJS",
+    "sbtBuild": "node_modules/sbt/bin/sbt fastOptJS",
     "sjs": "node_modules/sbt/bin/sbt run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,7 +20,7 @@
     "formidable": "^1.0.17",
     "immutable": "^3.8.2",
     "request": "^2.88.0",
-    "sjs-nodejs": "^1.0.0",
+    "sjs-nodejs": "1.0.1",
     "yauzl": "^2.10.0"
   }
 }
